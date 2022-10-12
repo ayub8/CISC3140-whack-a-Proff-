@@ -1,0 +1,25 @@
+﻿External Interface Requirements
+hardware:
+1. The software is must be usable on desktop sizes 21” and smaller, tablets, and mobile devices larger than 300px screen.
+2. The software is played w a mouth on desktops and laptops and with finger tap on tablets and mobile devices.
+
+
+Software:
+1. The main game screen has a stop watch on top to time the players.
+2. The main screen has a main playing area in the middle of the screen where objects move around and the game is played.
+3. The main game area is landscape on desktop and tablet and vertical on mobile devices.
+4. On desktop and tablet, the cursor should turn into a hammer, which will be animated to slam on the moving objects
+5. At the beginning of the game, there is a start button that will strat the stop watch.
+6. Each moving object, if hit, should disappear from the game using an animation.
+7. There are a limited number of moving objects (between 5 and 10) that will appear and disappear on the main area of the game.
+8. At the end of the game, a leaderboard shows up with the highest scores (shortest time to finish the game) on top.
+
+
+
+
+
+
+Quality Attributes
+1. The sotware should be available as a web application open to public
+2. The software should be available on chrome, firefox, and IE on any version released after january 2020.
+3. A database is required to save the players and their score. It could be either relational or non-relational.
