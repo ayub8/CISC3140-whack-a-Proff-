@@ -1,0 +1,63 @@
+
+We are going to be using HTML, CSS, and Javascript for this project
+
+Environment Setup
+We have installed Visual studio and atom as out IDE
+We will be using atom recommended packages 
+
+Recommended
+
+atom-ternjs
+Adds code intelligence to Atom.
+https://atom.io/packages/atom-ternjs
+autoclose-html-plus
+Will help you automatically close HTML tags.
+https://atom.io/packages/autoclose-html-plus
+emmet
+Adds code expansion to Atom.
+https://atom.io/packages/emmet
+csslint
+Adds CSS error checking abilities to Atom.
+https://atom.io/packages/csslint
+pigments
+Adds the ability to display colour in Atom code files.
+https://atom.io/packages/pigments
+language-ejs
+Adds EJS language support to Atom.
+https://atom.io/packages/language-ejs
+atom-beautify
+Helps to automatically format your code in Atom.
+https://atom.io/packages/atom-beautify
+Optional Packages
+
+atom-html-preview
+Sublime-Style-Column-Selection
+linter-eslint
+
+
+We will be using these VS code recommended extensions
+
+VSCode Extensions
+Recommended
+
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+hex-ci.stylelint-plus
+dbaeumer.vscode-eslint
+naumovs.color-highlight
+DigitalBrainstem.javascript-ejs-support
+Optional
+
+ritwickdey.LiveServer
+erikphansen.vscode-toggle-column-selection
+file-icons
+
+Research/Resources
+Documentations
+https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+
+https://crop-circle.imageonline.co/
+
+https://www.w3schools.com/html/html_headings.asp
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
