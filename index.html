@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/utility.css">
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="assets/javascript/mole.js"></script>
+    <script src="assets/javascript/stopwatch.js"></script>
+    <script src="assets/javascript/crud.js"></script>
+    <script src="assets/javascript/fetch.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <title>2-Part Arcade</title>
+</head>
+
+<body>
+    <!--stopwatch-->
+    <section class="stopwatch">
+        <div class="container grid">
+            <div class="stopwatch-text">
+                <h1>Whack a Mole!</h1>
+                <br><br>
+            </div>
+            <div class="watch">
+                <div id="watch" class="stopwatch-form card">
+                    <h1 class="timer hidden" id="duration">00.00</h1>
+
+                    <div id="starter" class="flex">
+                        <button class="coin" id="token">
+                            <h4>TOKEN</h4>
+                        </button>
+                        <div class="box"></div>
+                        <div class="box2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--scoreboard-->
+    <section class="scoreboard my-2">
+        <div class="container grid">
+            <div id="scoreboard" class="card">
+                <ul class="" id="winners">
+                    <!-- <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li>
+                    <li class="scoreboard-mask"></li> -->
+                </ul>
+                <div id="registration" class="score hidden">
+                    <form id="scoreboard-form" class="my-2">
+                        <h2 class="my-2">Game Over</h2>
+                        <h2 id="final-score" class="my-2"></h2>
+                        <div class="grid my-5">
+                            <input id="current-winner" type="text" placeholder="Types your name here ...">
+                            <input type="submit" class="btn btn-primary" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--trivia-->
+    <section id="trivia" class="trivia hidden">
+        <div class="container grid">
+            <div class="card">
+                <h2 id="random-country" class="my-3">
+                </h2>
+                <p id="answer" class="lead my-1">
+                </p>
+                <div class="answer-box">
+                    <form id="form" autocomplete="off">
+                        <div class="grid">
+                            <div class="auto-complete">
+                                <input type="text" id="answer-text-box" name="answer"
+                                    placeholder="Type your answer ...">
+                                <div class="answer" id="auto-complete">
+                                </div>
+                            </div>
+                            <input type="submit" id="submit-button" value="Submit" class="btn btn-primary mx-1">
+                        </div>
+                    </form>
+                    <div id="warning" class="warning">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div>
+                    <a href="" id="fetch-question" class="btn btn-dark my-1">Pass for a 10 Second Penalty</a>
+                </div>
+                <div>
+                    <a href="" id="fetch-answer" class="btn alert-error my-1">Get The Answer for a 100 Second
+                        Penalty</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <i id="green-arrow" class="fas fa-angle-double-down fa-10x green-arrow hidden"></i>
+    <!-- mole -->
+    <section class="mole">
+        <div id="field" class="container grid">
+            <div id="moles" class="card hidden">
+                <ul class="flex">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer bg-dark text-center">
+        <div class="flex">
+            <p><i class="fas fa-check fa-2x invisible"></i>1</p>
+            <p><i class="fas fa-check fa-2x invisible"></i>2</p>
+            <p><i class="fas fa-check fa-2x invisible"></i>3</p>
+            <p><i class="fas fa-check fa-2x invisible"></i>4</p>
+            <p><i class="fas fa-check fa-2x invisible"></i>5</p>
+        </div>
+    </section>
+</body>
+
+</html>
