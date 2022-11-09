@@ -1,25 +1,47 @@
-﻿External Interface Requirements
-hardware:
-1. The software is must be usable on desktop sizes 21” and smaller, tablets, and mobile devices larger than 300px screen.
-2. The software is played w a mouth on desktops and laptops and with finger tap on tablets and mobile devices.
+﻿1. Introduction
+    1.1 Purpose  - The purpose of this document is to help build a mockup of whack a mole. It’s a single player game that will be running on a web browser where you will be timed and your score will be measured onto a leaderboard.
+
+    1.2 Document Conventions  - This document uses the following conventions: HTML, CSS, Javascript, Supabase
+ 
+    1.3 Intended Audience and Reading Suggestions - This classic revival is suitable for people of all kinds, more likely younger, but can also be just bored. Additionally, this application will also be under review by the professor.
+    1.4 Project Scope - This project is an exercise to test our ability to work in larger teams accordingly. To build this game, the four teams must effectively communicate and learn how to continuously integrate and develop our application under supervision from the professor
+
+Overall Description
+    Function Requirements
+        The game is played on mobile or desktop/laptop screen using a web browser.A number (between 5 and 10) game objects (moles) will populate the screen and sprint up from hole objects. The player will use the cursor or tap to hit the moles. Once all the moles are destroyed, the game ends. The game objective is to destroy all moles as soon as possible. A stop watch is used to keep track of the time, and the final score is recorded to the database with the player’s name and sorted on the scoreboard from lowest to highest.
+        The administrator should have the following management functionalities:
+            Updating the moles’ speed of movement.
+            The number of moles.
+            The number of holes.
+
+System Features:
+    Functional Requirements:
+        1. A mechanism for controlling a player's actions. The click or tap action should trigger a hammer animation.
+        2. Visual components allow for player interaction within a game. The components required are images for moles, holes, hammer,
+        3. Players are scored based on the time it takes to finish the game. A light database is required for data persistency.
+        4. Animations are required for the hammer motion, moles destruction, moles movement, and the stopwatch.
+        5. A start button is required to start the game.
 
 
-Software:
-1. The main game screen has a stop watch on top to time the players.
-2. The main screen has a main playing area in the middle of the screen where objects move around and the game is played.
-3. The main game area is landscape on desktop and tablet and vertical on mobile devices.
-4. On desktop and tablet, the cursor should turn into a hammer, which will be animated to slam on the moving objects
-5. At the beginning of the game, there is a start button that will strat the stop watch.
-6. Each moving object, if hit, should disappear from the game using an animation.
-7. There are a limited number of moving objects (between 5 and 10) that will appear and disappear on the main area of the game.
-8. At the end of the game, a leaderboard shows up with the highest scores (shortest time to finish the game) on top.
+External Interface Requirements
+    hardware:
+        1. The software is must be usable on desktop sizes 21” and smaller, tablets, and mobile devices larger than 300px screen.
+        2. The software is played w a mouth on desktops and laptops and with finger tap on tablets and mobile devices.
 
-
-
-
+    Software:
+        1. The main game screen has a stop watch on top to time the players.
+        2. The main screen has a main playing area in the middle of the screen where objects move around and the game is played.
+        3. The main game area is landscape on desktop and tablet and vertical on mobile devices.
+        4. On desktop and tablet, the cursor should turn into a hammer, which will be animated to slam on the moving objects
+        5. At the beginning of the game, there is a start button that will strat the stop watch.
+        6. Each moving object, if hit, should disappear from the game using an animation.
+        7. There are a limited number of moving objects (between 5 and 10) that will appear and disappear on the main area of the game.
+        8. At the end of the game, a leaderboard shows up with the highest scores (shortest time to finish the game) on top.
+        9. A stopwatch should keep track of the time after the start of the game.
 
 
 Quality Attributes
-1. The sotware should be available as a web application open to public
-2. The software should be available on chrome, firefox, and IE on any version released after january 2020.
-3. A database is required to save the players and their score. It could be either relational or non-relational.
+    1. The software should be available as a web application open for public use.
+    2. The software should be available on chrome, firefox, and IE on any version released after january 2020.
+    3. A database is required to save the players and their score. It could be either relational or non-relational.
+    4. The software should be mobile compatible.
