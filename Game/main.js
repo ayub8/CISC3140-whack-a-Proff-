@@ -4,6 +4,7 @@ const scoreEl = document.querySelector('.score span')
 let score = 0
 
 const sound = new Audio("assets/smash.mp3")
+const scream = new Audio ("assets/scream.mp3")
 
 function run(){
     const i = Math.floor(Math.random() * holes.length)
@@ -17,6 +18,7 @@ function run(){
     img.addEventListener('click', () => {
         score += 1
         sound.play()
+        scream.play()
         scoreEl.textContent = score
         img.src = 'assets/mole-whacked.png'
         clearTimeout(timer)
