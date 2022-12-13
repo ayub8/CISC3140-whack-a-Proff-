@@ -1,0 +1,7 @@
+-found image for 
+	hammer
+	prof (placeholder)
+-found soundbite for hammer
+-setup board/holes/background color/image dimensions
+-changed animation timing for prof popping up
+
